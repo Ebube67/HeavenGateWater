@@ -186,3 +186,62 @@ body{
 }
 
   }
+/* Gallery */
+.gallery {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f9ff;
+}
+
+.gallery h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.gallery-slider img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Reviews */
+.reviews {
+    padding: 60px 20px;
+    background: white;
+    text-align: center;
+}
+
+.review-card {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
