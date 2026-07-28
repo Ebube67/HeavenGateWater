@@ -317,3 +317,13 @@ footer p {
 .btn-secondary:hover {
     transform: translateY(-3px);
 }
+.hero-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.hero-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
