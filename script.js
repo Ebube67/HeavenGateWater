@@ -58,3 +58,23 @@ window.addEventListener("load", () => {
     document.querySelector(".hero-content")
     .classList.add("show");
 });
+const gallery = document.querySelector(".gallery-grid");
+
+if (gallery) {
+    setInterval(() => {
+        gallery.scrollBy({
+            left: 320,
+            behavior: "smooth"
+        });
+
+        if (
+            gallery.scrollLeft + gallery.clientWidth
+            >= gallery.scrollWidth - 10
+        ) {
+            gallery.scrollTo({
+                left: 0,
+                behavior: "smooth"
+            });
+        }
+    }, 3000);
+}
