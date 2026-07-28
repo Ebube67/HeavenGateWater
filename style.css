@@ -327,3 +327,25 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+/* Gallery Animation */
+
+.gallery-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-item {
+    min-width: 300px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
